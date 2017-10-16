@@ -12,6 +12,9 @@
 		B6C3CDCB1F90A473000ADEFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C3CDC91F90A473000ADEFF /* Main.storyboard */; };
 		B6C3CDCD1F90A473000ADEFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C3CDCC1F90A473000ADEFF /* Assets.xcassets */; };
 		B6C3CDD01F90A473000ADEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C3CDCE1F90A473000ADEFF /* LaunchScreen.storyboard */; };
+		B6C3CDD91F90A4E4000ADEFF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C3CDD81F90A4E4000ADEFF /* SpriteKit.framework */; };
+		B6C3CDDD1F90AC07000ADEFF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C3CDDC1F90AC07000ADEFF /* GameScene.swift */; };
+		B6C3CDE11F94AB33000ADEFF /* coin01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6C3CDE01F94AB33000ADEFF /* coin01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B6C3CDCC1F90A473000ADEFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C3CDCF1F90A473000ADEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6C3CDD11F90A473000ADEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C3CDD81F90A4E4000ADEFF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		B6C3CDDC1F90AC07000ADEFF /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B6C3CDE01F94AB33000ADEFF /* coin01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C3CDD91F90A4E4000ADEFF /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				B6C3CDC41F90A473000ADEFF /* FlappyBird */,
 				B6C3CDC31F90A473000ADEFF /* Products */,
+				B6C3CDD71F90A4E4000ADEFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,24 @@
 		B6C3CDC41F90A473000ADEFF /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				B6C3CDE01F94AB33000ADEFF /* coin01.mp3 */,
 				B6C3CDC51F90A473000ADEFF /* AppDelegate.swift */,
 				B6C3CDC71F90A473000ADEFF /* ViewController.swift */,
 				B6C3CDC91F90A473000ADEFF /* Main.storyboard */,
 				B6C3CDCC1F90A473000ADEFF /* Assets.xcassets */,
 				B6C3CDCE1F90A473000ADEFF /* LaunchScreen.storyboard */,
 				B6C3CDD11F90A473000ADEFF /* Info.plist */,
+				B6C3CDDC1F90AC07000ADEFF /* GameScene.swift */,
 			);
 			path = FlappyBird;
+			sourceTree = "<group>";
+		};
+		B6C3CDD71F90A4E4000ADEFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3CDD81F90A4E4000ADEFF /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C3CDE11F94AB33000ADEFF /* coin01.mp3 in Resources */,
 				B6C3CDD01F90A473000ADEFF /* LaunchScreen.storyboard in Resources */,
 				B6C3CDCD1F90A473000ADEFF /* Assets.xcassets in Resources */,
 				B6C3CDCB1F90A473000ADEFF /* Main.storyboard in Resources */,
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C3CDDD1F90AC07000ADEFF /* GameScene.swift in Sources */,
 				B6C3CDC81F90A473000ADEFF /* ViewController.swift in Sources */,
 				B6C3CDC61F90A473000ADEFF /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +322,7 @@
 				B6C3CDD61F90A473000ADEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
