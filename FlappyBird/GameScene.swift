@@ -16,6 +16,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let wallCategory: UInt32 = 1 << 2       // 0...00100
     let scoreCategory: UInt32 = 1 << 3      // 0...01000
     
+    // 音声ファイルを読み込む
     let sound = SKAction.playSoundFileNamed("coin01.mp3", waitForCompletion: true)
     
     // スコア
