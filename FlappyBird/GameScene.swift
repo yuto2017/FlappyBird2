@@ -298,7 +298,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             // スプライトに物理演算を設定する
             upper.physicsBody = SKPhysicsBody(rectangleOf: wallTexture.size())
-            under.physicsBody?.categoryBitMask = self.wallCategory
+            upper.physicsBody?.categoryBitMask = self.wallCategory
             
             // 衝突の時に動かないように設定する
             upper.physicsBody?.isDynamic = false
@@ -350,7 +350,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 userDefaults.synchronize()
             }
             
-        } else if (contact.bodyA.categoryBitMask & itemCategory) == itemCategory {
+        //} else if (contact.bodyA.categoryBitMask & itemCategory) == itemCategory {
+        } else if contact.bodyA.categoryBitMask == itemCategory || contact.bodyB.categoryBitMask == itemCategory {
             
             itemScore += 1
             itemScoreLabelNode.text = "ItemScore:\(itemScore)"
